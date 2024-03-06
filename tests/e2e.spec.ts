@@ -1,8 +1,8 @@
+import { createHash } from 'crypto';
+import type { BrowserWindow } from 'electron';
 import type { ElectronApplication, JSHandle } from 'playwright';
 import { _electron as electron } from 'playwright';
 import { afterAll, beforeAll, expect, test } from 'vitest';
-import { createHash } from 'crypto';
-import type { BrowserWindow } from 'electron';
 
 let electronApp: ElectronApplication;
 
