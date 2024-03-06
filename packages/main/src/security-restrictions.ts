@@ -7,7 +7,7 @@ import { URL } from 'node:url';
  */
 type Permission = Parameters<
   Exclude<Parameters<Session['setPermissionRequestHandler']>[0], null>
->[1]
+>[1];
 
 /**
  * A list of origins that you allow open INSIDE the application and permissions for them.
