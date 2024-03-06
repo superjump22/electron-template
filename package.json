@@ -46,7 +46,7 @@
     "happy-dom": "13.6.2",
     "nano-staged": "0.8.0",
     "playwright": "1.42.1",
-    "prettier": "^3.2.5",
+    "prettier": "3.2.5",
     "simple-git-hooks": "2.10.0",
     "typescript": "5.3.3",
     "unplugin-auto-expose": "0.3.0",
