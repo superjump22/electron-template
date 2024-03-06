@@ -1,14 +1,14 @@
 import { resolve, sep } from 'path';
 
 export default {
-  '*.{js,mjs,cjs,ts,mts,cts,vue}': 'eslint --cache --fix',
-
   /**
    * Run typechecking if any type-sensitive files or project dependencies was changed
    * @param {string[]} filenames
    * @return {string[]}
    */
-  '{package-lock.json,packages/**/{*.ts,*.vue,tsconfig.json}}': ({ filenames }) => {
+  '{package-lock.json,packages/**/{*.ts,*.mts,*.cts,*.tsx,*.vue,tsconfig.json}}': ({
+    filenames,
+  }) => {
     // if dependencies was changed run type checking for all packages
     if (filenames.some(f => f.endsWith('package-lock.json'))) {
       return ['npm run typecheck --if-present'];
@@ -21,4 +21,6 @@ export default {
       p => `npm run typecheck:${p} --if-present`,
     );
   },
+  '*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}': 'eslint',
+  '*': 'prettier --ignore-unknown --write',
 };
