@@ -1,6 +1,8 @@
 import { resolve, sep } from 'path';
 
 export default {
+  '*': 'prettier --ignore-unknown --write',
+  '*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}': 'eslint',
   /**
    * Run typechecking if any type-sensitive files or project dependencies was changed
    * @param {string[]} filenames
@@ -21,6 +23,4 @@ export default {
       p => `npm run typecheck:${p} --if-present`,
     );
   },
-  '*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}': 'eslint',
-  '*': 'prettier --ignore-unknown --write',
 };
