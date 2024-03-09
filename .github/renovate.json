@@ -18,9 +18,5 @@
         "https://github.com/vitejs/"
       ]
     }
-  ],
-  "gitNoVerify": [
-    "commit",
-    "push"
   ]
 }
