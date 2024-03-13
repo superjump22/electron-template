@@ -2,6 +2,16 @@
   "extends": [
     "config:best-practices",
     ":disableDependencyDashboard",
-    ":automergeAll"
+    ":automergeAll",
+    ":automergeBranch"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Vite packages",
+      "matchUpdateTypes": "major",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/vitejs/"
+      ]
+    }
   ]
 }
