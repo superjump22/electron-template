@@ -8,6 +8,7 @@
     ":automergeBranch",
     ":disableDependencyDashboard",
     ":pinVersions",
+    ":pinDigestsDisabled",
     ":label(dependencies)"
   ],
   "packageRules": [
