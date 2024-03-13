@@ -1,3 +1,7 @@
 {
-  "extends": ["config:best-practices"]
+  "extends": [
+    "config:best-practices",
+    ":disableDependencyDashboard",
+    ":automergeAll"
+  ]
 }
