@@ -1,9 +1,14 @@
 {
   "extends": [
     "config:best-practices",
-    ":disableDependencyDashboard",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(deps)",
+    ":semanticCommitScopeDisabled",
     ":automergeAll",
-    ":automergeBranch"
+    ":automergeBranch",
+    ":disableDependencyDashboard",
+    ":pinVersions",
+    ":label(dependencies)"
   ],
   "packageRules": [
     {
