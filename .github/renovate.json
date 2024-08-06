@@ -15,9 +15,7 @@
     {
       "groupName": "Vite packages",
       "matchUpdateTypes": "major",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/vitejs/"
-      ]
+      "matchSourceUrls": ["https://github.com/vitejs/{/,}**"]
     }
   ]
 }
