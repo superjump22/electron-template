@@ -31,7 +31,7 @@
     "compile": "cross-env MODE=production npm run build && electron-builder build --config electron-builder.yml --dir --config.asar=false"
   },
   "dependencies": {
-    "electron-updater": "6.2.1"
+    "electron-updater": "6.3.0"
   },
   "devDependencies": {
     "@types/node": "20.16.9",
