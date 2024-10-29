@@ -34,7 +34,7 @@
     "electron-updater": "6.3.9"
   },
   "devDependencies": {
-    "@types/node": "22.8.2",
+    "@types/node": "22.8.4",
     "@typescript-eslint/eslint-plugin": "8.12.2",
     "@vitejs/plugin-vue": "5.1.4",
     "@vue/test-utils": "2.4.6",
