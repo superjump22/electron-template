@@ -44,7 +44,7 @@
     "eslint": "9.17.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-vue": "9.32.0",
-    "happy-dom": "16.2.8",
+    "happy-dom": "16.2.9",
     "nano-staged": "0.8.0",
     "playwright": "1.49.1",
     "prettier": "3.4.2",
